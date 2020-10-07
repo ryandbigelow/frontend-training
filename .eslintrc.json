@@ -1,7 +1,6 @@
 {
   "env": {
     "browser": true,
-    "es2021": false,
     "jest": true
   },
   "extends": ["plugin:react/recommended", "airbnb", "prettier"],

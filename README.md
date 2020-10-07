@@ -27,15 +27,41 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+### `yarn build`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### `yarn lint`
+
+From the root directory run `yarn lint`. This validates every `.ts` and `.tsx` file in the repository, excluding `node_modules`. All configuration can be found in [.eslintrc.json](./.eslintrc.json)
+
+### `yarn typecheck`
+
+From the root directory run `yarn typecheck`. This validates every `.ts` and `.tsx` file in the repository, excluding `node_modules`.
+
+### `yarn format`
+
+From the root directory run `yarn format`. This formats every `.ts` and `.tsx` file in the repository, excluding `node_modules`.
+
+### `yarn storybook`
+
+---
+
+Because we are using Redux to manage application state independently of any UI, we can develop React components in isolation from the main application using an approach recommended by the create-react-app team: https://facebook.github.io/create-react-app/docs/developing-components-in-isolation. We have several storybooks depending on what kind of UI you are [creating](#Organization).
+
+To start developing a new component with the storybook follow these steps:
+
+1. Add a new [component].examples.tsx file to the `examples` folder
+1. Use `storiesOf` to define the component you want to work on
+1. Use `add` to add a specific state you want to show in the story
+1. Run `yarn storybook` to build and run the storybook in your browser
+1. Develop the component and save to see the changes in the storybook page
 
 ## Learn More
 

@@ -1,0 +1,11 @@
+{
+  "name": "@om1/prepush-check",
+  "description": "Validates that there are no uncomitted changes before running any of the other prepush validations",
+  "version": "1.0.0",
+  "bin": {
+    "checkgit": "git.js"
+  },
+  "dependencies": {
+    "ansi-colors": "^4.1.0"
+  }
+}

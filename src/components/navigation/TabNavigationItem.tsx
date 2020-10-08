@@ -1,5 +1,6 @@
 import React, { PropsWithChildren } from 'react'
 import styled from '@emotion/styled'
+import { Theme } from '../../theme'
 
 export interface TabNavigationItemProps {
   active?: boolean
@@ -28,7 +29,7 @@ const ActiveTabIndicator = styled.div`
   bottom: 0px;
   left: 0px;
   right: 0px;
-  background: ${props => (props.theme as any).colors.blue700};
+  background: ${props => (props.theme as Theme).colors.blue700};
   border-radius: 0px 0px 3px 3px;
 `
 

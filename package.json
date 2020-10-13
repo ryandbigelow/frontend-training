@@ -23,7 +23,8 @@
     "react-redux": "7.1.0",
     "react-router-dom": "^5.1.2",
     "react-transition-group": "4.2.2",
-    "redux": "4"
+    "redux": "4",
+    "rc-slider": "9.5.3"
   },
   "devDependencies": {
     "@emotion/babel-preset-css-prop": "10",

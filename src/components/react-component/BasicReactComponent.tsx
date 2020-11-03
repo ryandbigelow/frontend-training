@@ -13,7 +13,7 @@ export const Container = styled.button<{ backgroundColor: string }>`
 /**
  * Simple react component that encapsulates behavior (clicking to change color) and text with the styled component
  */
-export const BasicReactComponent: FunctionComponent = () => {
+export const BasicReactComponent: FunctionComponent = ()       => {
   const [color, setColor] = useState('red')
   const randomize = () => {
     setColor(`# ${Math.floor(Math.random() * 16777215).toString(16)}`)

@@ -3,11 +3,11 @@ import { ThemeProvider } from 'emotion-theming'
 import TabNavigation from './components/navigation/TabNavigation'
 import { TabNavigationItem } from './components/navigation/TabNavigationItem'
 import { CatBreedPage } from './components/pages/cat-breeds/CatBreedPage'
-import { RandomCatPage } from './components/pages/random-cat/RandomCatPage'
+import { RandomCatPage } from './components/pages/favorites/FavoritesPage'
 import { ThemeObj } from './theme'
 
 function App() {
-  type Tab = 'HelloWorld' | 'CatBreeds' | 'RandomCat'
+  type Tab = 'HelloWorld' | 'CatBreeds' | 'Favorites'
   const [activeTab, setActiveTab] = useState<Tab>('HelloWorld')
   return (
     <ThemeProvider theme={ThemeObj}>
@@ -37,17 +37,17 @@ function App() {
         <div
           role="button"
           onClick={() => {
-            setActiveTab('RandomCat')
+            setActiveTab('Favorites')
           }}
         >
-          <TabNavigationItem active={activeTab === 'RandomCat'}>
+          <TabNavigationItem active={activeTab === 'Favorites'}>
             Random Cat
           </TabNavigationItem>
         </div>
       </TabNavigation>
       {activeTab === 'HelloWorld' && <>Hello World</>}
       {activeTab === 'CatBreeds' && <CatBreedPage />}
-      {activeTab === 'RandomCat' && <RandomCatPage />}
+      {activeTab === 'Favorites' && <RandomCatPage />}
     </ThemeProvider>
   )
 }

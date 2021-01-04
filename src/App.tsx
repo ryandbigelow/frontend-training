@@ -3,7 +3,7 @@ import { ThemeProvider } from 'emotion-theming'
 import TabNavigation from './components/navigation/TabNavigation'
 import { TabNavigationItem } from './components/navigation/TabNavigationItem'
 import { CatBreedPage } from './components/pages/cat-breeds/CatBreedPage'
-import { RandomCatPage } from './components/pages/favorites/FavoritesPage'
+import { FavoritesPage } from './components/pages/favorites/FavoritesPage'
 import { ThemeObj } from './theme'
 
 function App() {

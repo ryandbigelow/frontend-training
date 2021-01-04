@@ -20,7 +20,7 @@ interface FavoriteData {
   }
 }
 
-const RandomCatPage: React.FunctionComponent = () => {
+export const FavoritesPage: React.FunctionComponent = () => {
   return (
     <div style={{ backgroundColor: 'black', width: '100%', height: '100%' }}>
       <div

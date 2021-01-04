@@ -20,7 +20,7 @@ interface FavoriteData {
   }
 }
 
-export const FavoritesPage: React.FunctionComponent = () => {
+const FavoritesPage: React.FunctionComponent = () => {
   return (
     <div style={{ backgroundColor: 'black', width: '100%', height: '100%' }}>
       <div
@@ -175,3 +175,5 @@ const AddToFavoritesButton: React.FunctionComponent<ButtonProps> = (
     </button>
   )
 }
+
+export default FavoritesPage

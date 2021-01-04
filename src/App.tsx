@@ -47,7 +47,7 @@ function App() {
       </TabNavigation>
       {activeTab === 'HelloWorld' && <>Hello World</>}
       {activeTab === 'CatBreeds' && <CatBreedPage />}
-      {activeTab === 'Favorites' && <RandomCatPage />}
+      {activeTab === 'Favorites' && <FavoritesPage />}
     </ThemeProvider>
   )
 }
